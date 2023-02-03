@@ -34,7 +34,7 @@ _For easy `env` variable management checkout the [dotenv package](https://www.np
 ### qbXML Handler
 You must addtionally create your own `qbXMLHandler` that will send the SOAP Server a queue of requests to pass to QBWC. It will addtionally handle the qbXML responses and any errors that may be returned. 
 
-There is an [example class here](https://github.com/RappidDevelopment/quickbooks-js/blob/master/bin/qbXMLHandler/index.js).
+There is an [example class here](https://github.com/perfectcube/quickbooks-js/blob/master/bin/qbXMLHandler/index.js).
 
 ```javascript
 // Public
@@ -92,7 +92,7 @@ soapServer.run();
 ```
 ### QBWC Setup
 1. Login to your Quickbooks Company with your `admin` user.
-2. In the Quickbooks Web Connector, select "Add an Application" and supply it with a `.qwc` file. There is an example [here](https://github.com/RappidDevelopment/quickbooks-js/blob/master/test/app.qwc). 
+2. In the Quickbooks Web Connector, select "Add an Application" and supply it with a `.qwc` file. There is an example [here](https://github.com/perfectcube/quickbooks-js/blob/master/test/app.qwc). 
     * You may need to use `0.0.0.0` or a local IP like `10.0.0.156` to run locally
     * `<OwnerID>` and `<FileID>`can be any random `guid`
 3. Quickbooks will prompt you to authorize your new web service.
